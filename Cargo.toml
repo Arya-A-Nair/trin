@@ -4,8 +4,9 @@ members = [
     "bin/portal-bridge",
     "bin/trin", 
     "bin/trin-execution",
-    "crates/ethportal-api",
     "crates/e2store",
+    "crates/ethereum-rpc-client",
+    "crates/ethportal-api",
     "crates/evm",
     "crates/light-client",
     "crates/metrics",
@@ -13,11 +14,10 @@ members = [
     "crates/rpc",
     "crates/storage",
     "crates/subnetworks/beacon",
-    "crates/subnetworks/history",
+    "crates/subnetworks/history", 
     "crates/subnetworks/state",
     "crates/utils",
     "crates/validation",    
-    "crates/ethereum-rpc-client",
     "testing/ef-tests",
     "testing/ethportal-peertest",
     "testing/utp",
@@ -105,6 +105,7 @@ utp-rs = "0.1.0-alpha.17"
 
 # Trin workspace crates
 e2store = { path = "crates/e2store" }
+ethereum-rpc-client = { path = "crates/ethereum-rpc-client" }
 ethportal-api = { path = "crates/ethportal-api" }
 light-client = { path = "crates/light-client" }
 portal-bridge = { path = "bin/portal-bridge" }
@@ -120,7 +121,6 @@ trin-state = { path = "crates/subnetworks/state" }
 trin-storage = { path = "crates/storage" }
 trin-utils = { path = "crates/utils" }
 trin-validation = { path = "crates/validation" }
-ethereum-rpc-client = { path = "crates/ethereum-rpc-client" }
 
 crunchy = "=0.2.2"
 
